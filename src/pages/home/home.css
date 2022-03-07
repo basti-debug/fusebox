@@ -1,0 +1,78 @@
+
+.main{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.down{
+    position: fixed;
+    background-color: #24183d;
+    border-radius: 10px;
+    top: 200px;;
+    left: 0px;
+    width: 100%;
+    bottom: -10px;
+}
+
+.motd{
+    position: relative;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    left: 10px;
+}
+
+.heady{
+    position: relative;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    border-radius: 50px;
+}
+.usernamelabel{
+    position: relative;
+    margin-top: -15px;
+}
+
+.picutre1{
+
+    max-width: 100vw;
+    height: auto;
+
+}
+
+.ugglyindex{
+    position: absolute;
+    opacity: 0;
+}
+
+.musiccontrolls{
+    position: relative;
+    left:10px;
+    top:10px;
+}
+.currentlyplay{
+    position: relative;
+    color: #1573ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+.songname{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+.artistlabel{
+    position: absolute;
+    left: 0px;
+    top: 53px;
+    color: rgb(172, 168, 168);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}

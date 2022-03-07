@@ -1,0 +1,15 @@
+.mainmusic{
+    position: fixed;
+    background-color: #24183d;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+}
+.headlinemusic{
+    position: relative;
+    color: white;
+    left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
