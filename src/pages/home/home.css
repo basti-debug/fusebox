@@ -20,14 +20,14 @@
 .motd{
     position: relative;
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    font-family:'Montserrat', sans-serif;   
     left: 10px;
 }
 
 .heady{
     position: relative;
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    font-family:'Montserrat', sans-serif;   
     border-radius: 50px;
 }
 .usernamelabel{
@@ -55,7 +55,7 @@
 .currentlyplay{
     position: relative;
     color: #1573ff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: medium;
 }
 
@@ -64,7 +64,7 @@
     left: 0px;
     top: 30px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: larger;
 }
 
@@ -73,6 +73,6 @@
     left: 0px;
     top: 53px;
     color: rgb(172, 168, 168);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: small;
 }

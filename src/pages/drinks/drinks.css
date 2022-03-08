@@ -5,8 +5,8 @@
 
 .headlinedrinks{
     position: relative;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
+    font-family: 'Montserrat', sans-serif;
+    left: 10px;
     color: white;
 }
 .drinks{
@@ -41,8 +41,8 @@ width: 100px;
     position: absolute;
     left: 75px;
     top: 10px;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:large;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 .drinkdesk{
@@ -50,13 +50,13 @@ width: 100px;
     left:75px;
     top: 35px;
     color: gray;
-    font-size: smaller;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-small;
+    font-family: 'Montserrat', sans-serif;
 }
 .send{
     position: absolute;
     top: -15px;
-    right: -260px;
+    right: -270px;
     width: 60px;
     height: 40px;
     color: gray;
