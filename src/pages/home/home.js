@@ -1,24 +1,38 @@
 import  Navbar from "../navbar/navbar.js";
 import './home.css';
-import React from "react";
+import React, { Component } from "react";
 import kellerpic from '../../sources/keller1.jpg';
+import SpotifyWebApi from "spotify-web-api-js";
+const spotifyapi = new SpotifyWebApi();
 
-var varusername = "basti"
-var songnamevar = "One Day At A Time"
+
+var usernamevar = "user"
+var songnamevar = ""
 var artistvar = "Nu:Tone, Lalin St. Juste"
 
-const CLIENT_ID = "4989153d89f24776aafab0641779427a"
-const REDIRECT_URI = "http://192.168.212.89:3000"
-const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
-const RESPONSE_TYPE = "token"
 
+
+
+spotifyapi.setAccessToken('');
+
+function currentlyplaying(){
+  spotifyapi.getMyCurrentPlaybackState()
+        .then((response) => {
+          console.log(response.item.name)
+          return response.item.name
+        })
+}
 const HomeTab = () => {
+  
+  
+  
+
   return (
 
-    
-
 <div className="main">
-
+    
+  
+  
   <img src={kellerpic} className="picutre1"/>
 
   
@@ -29,10 +43,8 @@ const HomeTab = () => {
     </h1>
     
     <h3 className="usernamelabel">
-      {varusername}
     </h3>
     </div>
-    <script src="https://sdk.scdn.co/spotify-player.js"></script>
 
     <div className="musiccontrolls">
     <label className="currentlyplay">
@@ -40,12 +52,16 @@ const HomeTab = () => {
     </label>
 
     <label className="songname" >
-    {songnamevar}
+      
     </label>
     
     <label className="artistlabel">
-      {artistvar}
     </label>
+
+    <button onClick={() => currentlyplaying()}>
+            Check Now Playing
+          </button>
+
     </div>
 
   </div>
