@@ -17,23 +17,7 @@ const Music = ()=>{
         <h1 className="headlinemusic">
             Queue
         </h1>
-        <div className="searchicon">
-        <IconButton 
-        style = {{color:'#FFFFFF'}}
-        size="large" 
-        >
-        <SearchIcon />
-        </IconButton>
-        </div>
-       
-        <TextField 
-        className="searchbar"
-        color="secondary"
-        label="search songs" 
-        sx={{ input: { color: 'white',fontFamily:'Montserrat' } }}
-        focused
-          />
-
+        
         <div className="displaycurrentmusic">
         <label className="currentlyplay2">
           Currently playing:
@@ -51,6 +35,61 @@ const Music = ()=>{
         className="progressbar"
         variant="determinate" 
         value={progress} />
+
+
+        <TextField 
+        className="searchbar"
+        color="secondary"
+        label="search songs" 
+        sx={{ input: { color: 'white',fontFamily:'Montserrat' } }}
+        focused
+          />
+
+
+        <div className="searchicon">
+        <IconButton 
+        style = {{color:'#FFFFFF'}}
+        size = 'large' 
+        >
+        <SearchIcon />
+        </IconButton>
+        </div>
+       
+        
+
+      <div className="queuelist">
+      <div className="comminguplabel">next in queue</div>
+
+
+      <box className="dot">-</box>
+      <div className="songqueue" >
+      One Spliff
+      </div>
+    
+      <div className="artistqueue">
+      Gray
+      </div>
+      
+      <box className="dot">-</box>
+      <div className="songqueue" >
+      Playhouse
+      </div>
+    
+      <div className="artistqueue">
+      Blake.08
+      </div>
+      
+      <box className="dot">-</box>
+      <div className="songqueue" >
+      Let It Go
+      </div>
+    
+      <div className="artistqueue">
+      Erick the Architecht
+      </div>
+      
+      </div>
+
         </div>
         <Navbar/>
         </div>

@@ -20,16 +20,16 @@
     background-color: #9c27af;
     border-radius: 50px;
 
-    right: 20px;
-    top: 240px;
+    right: 52px;
+    top: 118px;
 }
 
 .searchbar{
     position: absolute;
-    left:30px;
-    height: 5px;
+    left:0px;
+    height: 1px;
     width: 70vw;
-    top: 155px;
+    top: 92px;
 }
 
 .displaycurrentmusic{
@@ -66,4 +66,43 @@
     position: relative;
     top: 65px;
     width: 70vw;
+}
+
+
+.queuelist{
+    position: relative;
+    top:300px;
+}
+
+.comminguplabel{
+    position: relative;
+    color: rgb(172, 168, 168);
+    font-family: 'Montserrat', sans-serif;
+    top: 0px;
+    height: 30px;
+}
+
+.dot{
+    position: relative;
+    color: rgb(172, 168, 168);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.songqueue{
+    position: relative;
+    left:15px;
+    top: -20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+
+.artistqueue{
+    position: relative;
+    left: 15px;
+    top: -20px;
+    color: rgb(172, 168, 168);
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
 }
