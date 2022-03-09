@@ -46,21 +46,20 @@ const HomeTab = () => {
     </h3>
     </div>
 
-    <div className="musiccontrolls">
-    <label className="currentlyplay">
+    <div className="musiccontrolls1">
+      <div className="currentlyplay1">
       Currently playing:
-    </label>
+      </div>
 
-    <label className="songname" >
-      
-    </label>
+      <div className="songname1" >
+      The Night
+      </div>
     
-    <label className="artistlabel">
-    </label>
+      <div className="artistlabel1">
+      Finn Foxell
+      </div>
 
-    <button onClick={() => currentlyplaying()}>
-            Check Now Playing
-          </button>
+    
 
     </div>
 

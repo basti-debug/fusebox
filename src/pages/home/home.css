@@ -21,7 +21,7 @@
     position: relative;
     color: white;
     font-family:'Montserrat', sans-serif;   
-    left: 10px;
+    left: 80px;
 }
 
 .heady{
@@ -47,31 +47,33 @@
     opacity: 0;
 }
 
-.musiccontrolls{
+.musiccontrolls1{
     position: relative;
-    left:10px;
+    left:80px;
     top:10px;
+    height: 100px;
+    width: 235px;
+    text-align: center;
 }
-.currentlyplay{
+.currentlyplay1{
     position: relative;
     color: #1573ff;
+    
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
 }
 
-.songname{
-    position: absolute;
-    left: 0px;
-    top: 30px;
+.songname1{
+    position: relative;
+    top: 8px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: larger;
 }
 
-.artistlabel{
-    position: absolute;
-    left: 0px;
-    top: 53px;
+.artistlabel1{
+    position: relative;
+    top: 10px;
     color: rgb(172, 168, 168);
     font-family: 'Montserrat', sans-serif;
     font-size: small;

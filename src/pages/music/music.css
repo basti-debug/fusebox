@@ -10,6 +10,60 @@
 .headlinemusic{
     position: relative;
     color: white;
-    left: 10px;
+    left: 30px;
+    top:10px;
     font-family: 'Montserrat', sans-serif;
+}
+.searchicon{
+    position: absolute;
+    color: white;
+    background-color: #9c27af;
+    border-radius: 50px;
+
+    right: 20px;
+    top: 240px;
+}
+
+.searchbar{
+    position: absolute;
+    left:30px;
+    height: 5px;
+    width: 70vw;
+    top: 155px;
+}
+
+.displaycurrentmusic{
+    position: relative;
+    left:30px;
+    top:10px;
+}
+.currentlyplay2{
+    position: relative;
+    color: #1573ff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.songname2{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+
+.artistlabel2{
+    position: absolute;
+    left: 0px;
+    top: 53px;
+    color: rgb(172, 168, 168);
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.progressbar{
+    position: relative;
+    top: 65px;
+    width: 70vw;
 }

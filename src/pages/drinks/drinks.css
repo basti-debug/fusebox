@@ -4,9 +4,8 @@
 }
 
 .headlinedrinks{
-    position: relative;
     font-family: 'Montserrat', sans-serif;
-    left: 10px;
+    
     color: white;
 }
 .drinks{
@@ -18,7 +17,7 @@
 .downdrinks{
 position: relative;
 left: 2vw; 
-width: 100px;
+width: 200px;
 }
 .drinky{
     position:relative;
