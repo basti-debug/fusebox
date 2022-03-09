@@ -6,29 +6,27 @@ import "./switch.css"
 import Navbar from "../navbar/navbar.js" 
 import "../navbar/navbar.js"
 import supplypic from '../../sources/power-supply.png';
-import React from 'react';
+import React, { useState } from 'react';
 
 var switch1 = false;
 var switch2 = false;
 var sliderval = 1;
 
-function valuetext(value){
-    return "{value}";
-}
+
 
 function setswitch1(){
   
     if (switch1==false)
     {
         switch1 = true;
-        fetch('http://192.168.137.114/supply1on')
+        fetch('http://192.168.137.178/supply1on')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
     else
     {
         switch1 = false;
-        fetch('http://192.168.137.114/supply1off')
+        fetch('http://192.168.137.178/supply1off')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
@@ -41,25 +39,47 @@ function setswitch2(){
     if (switch2==false)
     {
         switch2= true;
-        fetch('http://192.168.137.114/supply2on')
+        fetch('http://192.168.137.178/supply2on')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
     else
     {
         switch2 = false;
-        fetch('http://192.168.137.114/supply2off')
+        fetch('http://192.168.137.178/supply2off')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
     console.log(switch2)
 }
 
-function handleslider(){
-console.log(sliderval)
-}
+
+
+
 
 const Switch = ()=>{
+
+    const [currentsliderval,setsliderval] = useState(0);
+
+    const handleChange = (event, newValue) => {
+        setsliderval(newValue);
+        if (newValue == 1){
+            fetch('http://192.168.137.178/output1')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+        }
+        if (newValue == 2){
+            fetch('http://192.168.137.178/output2')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+        }
+        if (newValue == 3){
+            fetch('http://192.168.137.178/output3')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+        }
+      };
+
     return(
 
 
@@ -120,17 +140,17 @@ const Switch = ()=>{
             Spotify
         </label>
         <Box  sx = {{height:220}} className="slideroutputs">
-            <Slider 
-                
+            <Slider    
+                 
+               
                 orientation = "vertical"
-                defaultValue={sliderval}
-                getAriaValueText={valuetext}
+                defaultValue={1}
                 step={1}
                 marks
                 max={3}
                 min={1}
-                onChange={handleslider()}
-                
+                onChange={handleChange}
+                value={currentsliderval}
             />
         </Box>
         

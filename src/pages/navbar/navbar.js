@@ -53,7 +53,6 @@ const navbar = () =>{
 <IconButton 
     aria-label="ToggleOnIcon"
     style = {{color:'#F75B5B'}}
-    onclick="window.location.replace('index.php' )"
     onClick={()=> {
       window.location.href= "/switch"
     }}
