@@ -61,6 +61,114 @@ const Drinks = () => {
         <h1 className = "headlinedrinks">Drinks</h1>
         <div className="drinky" >
             
+            <img src= {glass} className="drinkpic"/>
+            <label className="drinkname">
+            Virgin Sunrise    
+            </label > 
+
+            <label className="drinkdesk">
+            Ananassaft, Orangensaft, Cranberrysaft
+            </label>
+        
+            <IconButton 
+            className="send"
+            onClick={()=>{
+            fetch('http://192.168.137.212/virgin')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+            fetch('http://192.168.137.212/')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+        
+        }}
+            >
+                <SendIcon style={{color:"gray"}}/>
+            </IconButton>
+        </div>
+        <div className="space"> </div>
+        <div className="drinky" >
+            
+            <img src= {glass} className="drinkpic"/>
+            <label className="drinkname">
+            Cola    
+            </label > 
+
+            <label className="drinkdesk">
+            Cola
+            </label>
+        
+            <IconButton 
+            className="send"
+            onClick={()=>{
+            fetch('http://192.168.137.212/cola')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+            fetch('http://192.168.137.212/')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+        
+        }}
+            >
+                <SendIcon style={{color:"gray"}}/>
+            </IconButton>
+        </div>
+        <div className="space"> </div>
+        <div className="drinky" >
+            
+            <img src= {glass} className="drinkpic"/>
+            <label className="drinkname">
+            Safer sex on the Beach    
+            </label > 
+
+            <label className="drinkdesk">
+            Pfirsichsaft, Ananassaft,Cranberrysaft
+            </label>
+        
+            <IconButton 
+            className="send"
+            onClick={()=>{
+            fetch('http://192.168.137.212/safesex')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+            fetch('http://192.168.137.212/')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+        
+        }}
+            >
+                <SendIcon style={{color:"gray"}}/>
+            </IconButton>
+        </div>
+        <div className="space"> </div>
+        <div className="drinky" >
+            
+            <img src= {glass} className="drinkpic"/>
+            <label className="drinkname">
+            Orangensaft  
+            </label > 
+
+            <label className="drinkdesk">
+            Orangensaft
+            </label>
+        
+            <IconButton 
+            className="send"
+            onClick={()=>{
+            fetch('http://192.168.137.212/orange')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+            fetch('http://192.168.137.212/')
+            .then(response => response.json())
+            .then(data => console.log(data.total));
+        
+        }}
+            >
+                <SendIcon style={{color:"gray"}}/>
+            </IconButton>
+        </div>
+        <div className="space"> </div>
+        <div className="drinky" >
+            
             <img src= {acapulcopic} className="drinkpic"/>
             <label className="drinkname">
             Acapulco    
@@ -73,10 +181,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-            fetch('http://192.168.137.40/acapulco')
+            fetch('http://192.168.137.212/acapulco')
             .then(response => response.json())
             .then(data => console.log(data.total));
-            fetch('http://192.168.137.40/')
+            fetch('http://192.168.137.212/')
             .then(response => response.json())
             .then(data => console.log(data.total));
         
@@ -100,10 +208,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/ambassador')
+                fetch('http://192.168.137.212/ambassador')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -127,10 +235,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/amf')
+                fetch('http://192.168.137.212/amf')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -154,10 +262,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/baybreeze')
+                fetch('http://192.168.137.212/baybreeze')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -182,10 +290,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/bluehawaii')
+                fetch('http://192.168.137.212/bluehawaii')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -210,10 +318,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/bluekamikaze')
+                fetch('http://192.168.137.212/bluekamikaze')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -238,10 +346,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/bluelagoon')
+                fetch('http://192.168.137.212/bluelagoon')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -267,10 +375,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/blueocean')
+                fetch('http://192.168.137.212/blueocean')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -296,10 +404,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/caipirinha')
+                fetch('http://192.168.137.212/caipirinha')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -324,10 +432,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/caipiroska')
+                fetch('http://192.168.137.212/caipiroska')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -351,10 +459,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/capecod')
+                fetch('http://192.168.137.212/capecod')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -378,10 +486,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/cosmopolitan')
+                fetch('http://192.168.137.212/cosmopolitan')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -405,10 +513,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/cubalibre')
+                fetch('http://192.168.137.212/cubalibre')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -432,10 +540,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/daquiri')
+                fetch('http://192.168.137.212/daquiri')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -459,10 +567,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/culto')
+                fetch('http://192.168.137.212/culto')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -486,10 +594,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/fuzzy')
+                fetch('http://192.168.137.212/fuzzy')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -513,10 +621,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/gimlet')
+                fetch('http://192.168.137.212/gimlet')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -540,10 +648,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/greenmex')
+                fetch('http://192.168.137.212/greenmex')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -567,10 +675,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/greyhound')
+                fetch('http://192.168.137.212/greyhound')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -594,10 +702,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/hairynavel')
+                fetch('http://192.168.137.212/hairynavel')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -621,10 +729,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/hornybull')
+                fetch('http://192.168.137.212/hornybull')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -648,10 +756,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/jap')
+                fetch('http://192.168.137.212/jap')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -676,10 +784,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/jolly')
+                fetch('http://192.168.137.212/jolly')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -704,10 +812,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/kamikaze')
+                fetch('http://192.168.137.212/kamikaze')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -733,10 +841,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/liquidmarijuana')
+                fetch('http://192.168.137.212/liquidmarijuana')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -761,10 +869,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/longbeach')
+                fetch('http://192.168.137.212/longbeach')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -789,10 +897,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/longisland')
+                fetch('http://192.168.137.212/longisland')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -817,10 +925,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/malibu')
+                fetch('http://192.168.137.212/malibu')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -845,10 +953,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/margarita')
+                fetch('http://192.168.137.212/margarita')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -873,10 +981,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/martini')
+                fetch('http://192.168.137.212/martini')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -901,10 +1009,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/mojito')
+                fetch('http://192.168.137.212/mojito')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -929,10 +1037,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/rocketfuel')
+                fetch('http://192.168.137.212/rocketfuel')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -957,10 +1065,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/screwdriver')
+                fetch('http://192.168.137.212/screwdriver')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -986,10 +1094,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/seabreeze')
+                fetch('http://192.168.137.212/seabreeze')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -1015,10 +1123,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/sexonthebeach')
+                fetch('http://192.168.137.212/sexonthebeach')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -1043,10 +1151,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/sexonthebeach')
+                fetch('http://192.168.137.212/sexonthebeach')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -1071,10 +1179,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/tequillaslammer')
+                fetch('http://192.168.137.212/tequillaslammer')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -1099,10 +1207,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/woowoo')
+                fetch('http://192.168.137.212/woowoo')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -1131,10 +1239,68 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/melonball')
+                fetch('http://192.168.137.212/melonball')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
+                .then(response => response.json())
+                .then(data => console.log(data.total));
+            
+            }}
+            >
+                <SendIcon style={{color:"gray"}}/>
+            </IconButton>
+        </div>
+
+
+        <div className="space"> </div>
+        <div className="drinky" >
+            
+            <img src= {glass} className="drinkpic"/>
+            <label className="drinkname">
+            Clean    
+            </label > 
+
+            <label className="drinkdesk">
+            only for cleaning
+            </label>
+        
+            <IconButton 
+            className="send"
+            onClick={()=>{
+                fetch('http://192.168.137.212/clean')
+                .then(response => response.json())
+                .then(data => console.log(data.total));
+                fetch('http://192.168.137.212/')
+                .then(response => response.json())
+                .then(data => console.log(data.total));
+            
+            }}
+            >
+                <SendIcon style={{color:"gray"}}/>
+            </IconButton>
+        </div>
+
+
+        <div className="space"> </div>
+        <div className="drinky" >
+            
+            <img src= {glass} className="drinkpic"/>
+            <label className="drinkname">
+            Setup    
+            </label > 
+
+            <label className="drinkdesk">
+            Setup
+            </label>
+        
+            <IconButton 
+            className="send"
+            onClick={()=>{
+                fetch('http://192.168.137.212/setupdrinky')
+                .then(response => response.json())
+                .then(data => console.log(data.total));
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
@@ -1160,10 +1326,10 @@ const Drinks = () => {
             <IconButton 
             className="send"
             onClick={()=>{
-                fetch('http://192.168.137.40/midorillusion')
+                fetch('http://192.168.137.212/midorillusion')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
-                fetch('http://192.168.137.40/')
+                fetch('http://192.168.137.212/')
                 .then(response => response.json())
                 .then(data => console.log(data.total));
             
