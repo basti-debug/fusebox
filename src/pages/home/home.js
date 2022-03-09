@@ -58,11 +58,23 @@ const HomeTab = () => {
       <div className="artistlabel1">
       Finn Foxell
       </div>
+    </div>
+    <div className="drinkoftheday">
+      <div className="label1">
+      Drink of the Day 
+      </div>
+
+      <div className="drinkname1" >
+      Salzi - Spezial
+      </div>
+    
+      <div className="by1">
+      recommended by simon
+      </div>
 
     
 
     </div>
-
   </div>
 
 

@@ -19,14 +19,14 @@ function setswitch1(){
     if (switch1==false)
     {
         switch1 = true;
-        fetch('http://192.168.137.178/supply1on')
+        fetch('http://192.168.137.171/supply1on')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
     else
     {
         switch1 = false;
-        fetch('http://192.168.137.178/supply1off')
+        fetch('http://192.168.137.171/supply1off')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
@@ -39,14 +39,14 @@ function setswitch2(){
     if (switch2==false)
     {
         switch2= true;
-        fetch('http://192.168.137.178/supply2on')
+        fetch('http://192.168.137.171/supply2on')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
     else
     {
         switch2 = false;
-        fetch('http://192.168.137.178/supply2off')
+        fetch('http://192.168.137.171/supply2off')
         .then(response => response.json())
         .then(data => console.log(data.total));
     }
@@ -64,17 +64,17 @@ const Switch = ()=>{
     const handleChange = (event, newValue) => {
         setsliderval(newValue);
         if (newValue == 1){
-            fetch('http://192.168.137.178/output1')
+            fetch('http://192.168.137.171/output1')
             .then(response => response.json())
             .then(data => console.log(data.total));
         }
         if (newValue == 2){
-            fetch('http://192.168.137.178/output2')
+            fetch('http://192.168.137.171/output2')
             .then(response => response.json())
             .then(data => console.log(data.total));
         }
         if (newValue == 3){
-            fetch('http://192.168.137.178/output3')
+            fetch('http://192.168.137.171/output3')
             .then(response => response.json())
             .then(data => console.log(data.total));
         }

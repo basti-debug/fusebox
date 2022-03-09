@@ -78,3 +78,32 @@
     font-family: 'Montserrat', sans-serif;
     font-size: small;
 }
+.drinkoftheday{
+    position: relative;
+    left:80px;
+    top:10px;
+    height: 100px;
+    width: 235px;
+    text-align: center;
+}
+.label1{
+    position: relative;
+    top: 8px;
+    color: #1573ff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+.drinkname1{
+    position: relative;
+    top: 8px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+.by1{
+    position: relative;
+    top: 10px;
+    color: rgb(172, 168, 168);
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
