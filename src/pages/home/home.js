@@ -7,7 +7,7 @@ const spotifyapi = new SpotifyWebApi();
 
 
 var usernamevar = "user"
-var songnamevar = ""
+var songnamevar = ""   
 var artistvar = "Nu:Tone, Lalin St. Juste"
 
 
